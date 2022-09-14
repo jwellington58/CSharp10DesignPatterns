@@ -5,7 +5,8 @@
     /// </summary>
     public class Logger
     {
-        private static Logger? _instance;
+        private static readonly Lazy<Logger> _lazyLogger 
+            = new(() => new Logger());
 
         /// <summary>
         /// Insta
@@ -15,8 +16,7 @@
         {
             get
             {
-                _instance ??= new Logger();
-                return _instance;
+                return _lazyLogger.Value;
             }
         }
 
