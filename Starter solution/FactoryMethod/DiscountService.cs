@@ -1,5 +1,8 @@
 ﻿namespace FactoryMethod
 {
+    /// <summary>
+    /// Product
+    /// </summary>
     public abstract class DiscountService
     {
         public abstract int DiscountPercentage { get; }
