@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactory
 {
-    public class IShippingCostsService
+    public interface IShippingCostsService
     {
     }
 }
