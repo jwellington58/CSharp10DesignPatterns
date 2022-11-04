@@ -2,5 +2,6 @@
 {
     public interface IShippingCostsService
     {
+        decimal ShippingCosts { get; }
     }
 }
